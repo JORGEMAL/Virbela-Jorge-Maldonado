@@ -1,0 +1,19 @@
+Questions
+
+1. How can your implementation be optimized?
+   The first method attempted to search for the closest distance used an array, which is completely traversed.
+   Its time complexity is O(n). However, each time a new object was created in the scene, a new array was created, which is not very efficient.
+   The current method uses a List of GameObjects.
+   This also has a time complexity of O(n), however, objects (items and bots) are added dynamically and the list grows every time an object is
+   spawned instead of creating a new list.
+
+2. How much time did you spend on your implementation?
+   2.5 hours for first 3 phases.
+   2 hours for 3 of the optional tasks (dependency injection implementation, optimizing finding nearest, adding new items/bots on key pressed)
+
+3. What was most challenging for you?
+   For the first attempt, getting gameobjects with different tags (item and bot) into the same array.
+   Replace the implementation from using an array to using a list.
+
+4. What else would you add to this exercise?
+   Move the player with keys or cursor, add more categories of objects to make a better use of dependency injection.
